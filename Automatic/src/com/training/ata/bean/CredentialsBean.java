@@ -1,7 +1,14 @@
 package com.training.ata.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ATA_TBL_USER_CREDENTIALS")
 public class CredentialsBean 
 {
+	@Id
 		private String userID;
 		private String password;
 		private String usertype;
